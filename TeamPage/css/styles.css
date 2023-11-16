@@ -45,7 +45,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 26, 188, 156;
+  --bs-primary-rgb: 33, 37, 41;
   --bs-secondary-rgb: 44, 62, 80;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -105,6 +105,29 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+@font-face {
+  font-family: NanumSquareNeo;
+  src: url('../assets/NanumSquareNeo-eHv.ttf');
+}
+
+.text_box{
+  text-align: center;
+  padding-bottom: 25px;
+  font-size: 50px;
+  color: #f90d0d;
+  font-family: NanumSquareNeo;
+}
+
+.blink {
+  animation: blink 0.5s infinite;
+  font-size: 2.5rem;
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
 }
 
 hr {
@@ -8182,6 +8205,15 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
+  /* background-image: url("../assets/img/backgrre.gif") !important; */
+  background-image: url("../assets/img/2.jpg") !important;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+
+.bg-primary-copy {
+  --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
 
@@ -11026,9 +11058,10 @@ html {
   color: #6c757d;
 }
 
+
 .masthead {
-  padding-top: calc(6rem + 74px);
-  padding-bottom: 6rem;
+  padding-top: calc(3rem + 45px);
+  padding-bottom: 3.85rem;
 }
 .masthead .masthead-heading {
   font-size: 2.75rem;
@@ -11043,8 +11076,8 @@ html {
 
 @media (min-width: 992px) {
   .masthead {
-    padding-top: calc(6rem + 104px);
-    padding-bottom: 6rem;
+    padding-top: calc(3rem + 75px);
+    padding-bottom: 3.85rem;
   }
   .masthead .masthead-heading {
     font-size: 4rem;
