@@ -11092,7 +11092,7 @@ html {
   line-height: 2rem;
 }
 /* 프로필 추가 정보 디자인
-.portfolio-modal .modal-body div {
+*/.portfolio-modal .modal-body div {
   text-align: left;
 }
 
@@ -11124,7 +11124,7 @@ html {
     font-size: 1.5rem;
     line-height: 2.5rem;
   }
-} */ */
+} */ 
 
 .footer {
   padding-top: 5rem;
