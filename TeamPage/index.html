@@ -20,36 +20,7 @@
 
 
 
-    <!--여기서 부터 영희 구역-->
-    <script>
-        function startAnimation(entries, observer) {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('animate');
-              observer.unobserve(entry.target);
-            }
-          });
-        }
-    
-        const options = {
-          root: null,
-          rootMargin: '0px',
-          threshold: 0.5
-        };
-    
-        const observer = new IntersectionObserver(startAnimation, options);
-    
-        document.addEventListener('DOMContentLoaded', () => {
-          const progressBars = document.querySelectorAll('.progress-bar');
-    
-          progressBars.forEach(bar => {
-            observer.observe(bar);
-            bar.parentElement.classList.add('visible');
-          });
-        });
-      </script>
 
-<!--여기까지 영희 구역-->
 
 
 
@@ -57,28 +28,7 @@
 
 <body id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="#page-top">최강1조</a>
-            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
-                onclick="scrollToMasthead()">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#page-top">Main</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#about">Skill</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#contact">Mbti</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="header"></div>
 
     <!-- Masthead-->
     <header class="masthead bg-primary text-white text-center" id="masthead">
@@ -216,7 +166,7 @@
 
     <!--여기서부터 영희 구역-->
 
-    <section class="container">
+    <section class="container" , id="skill">
         <div class="intro_bg"></div>
         <br>
         <br>
@@ -229,31 +179,31 @@
             <div class="progress progress-75">
                 <div class="progress-bar bg-success"></div>
             </div>
-         
+
             <p class="mt-4 mb-2">주량</p>
             <div class="progress progress-18">
                 <div class="progress-bar bg-success"></div>
             </div>
-         
+
             <p class="mt-4 mb-2">친화력</p>
             <div class="progress progress-87">
                 <div class="progress-bar bg-success"></div>
             </div>
-         
+
             <p class="mt-4 mb-2">단합력</p>
             <div class="progress progress-65">
                 <div class="progress-bar bg-success"></div>
             </div>
-         
+
             <p class="mt-4 mb-2">비주얼</p>
             <div class="progress progress-89">
                 <div class="progress-bar bg-success"></div>
-            </div>      
+            </div>
             <br>
             <br>
             <br>
         </div>
-        
+
     </section>
 
 
@@ -261,51 +211,10 @@
 
 
 
-
-
-  
-
-   
-
-
-
-
     <!-- Footer-->
-    <footer class="footer text-center">
-        <div class="container">
-            <div class="row">
-                <!-- Footer Location-->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">최강1조</h4>
-                    <p class="lead mb-0">
-                        2023 11월20일 첫프론트과제
-                        <br />
-                        Metanet
-                    </p>
-                </div>
-                <!-- Footer Social Icons-->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Around the Web</h4>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-github"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-e-mail"></i></a>
 
-                </div>
-                <!-- Footer About Text-->
-                <div class="col-lg-4">
-                    <h4 class="text-uppercase mb-4">About StrongestOneTeam</h4>
-                    <p class="lead mb-0">
-                        세계관 최강자들만 모인 팀입니다. 1등으로 과제를 제출하는 그날을 기원하며,,
-                        <a href="https://github.com/yjpotato/TeamPage">Team Github</a>
-                        .
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Copyright Section-->
-    <div class="copyright py-4 text-center text-white">
-        <div class="container"><small>Copyright &copy; StrongestOneTeam 2023</small></div>
-    </div>
+    <div id="footer"></div>
+
     <!-- Portfolio Modals-->
     <!-- Portfolio Modal 1-->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1"
@@ -319,7 +228,8 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log
+                                    Cabin</h2>
                                 <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
@@ -329,9 +239,12 @@
                                 <!-- Portfolio Modal - Image-->
                                 <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
                                 <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
-                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore
+                                    quisquam
+                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
+                                    itaque. Nam.
                                 </p>
                                 <button class="btn btn-primary" data-bs-dismiss="modal">
                                     <i class="fas fa-xmark fa-fw"></i>
@@ -356,7 +269,8 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty
+                                    Cake</h2>
                                 <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
@@ -366,9 +280,12 @@
                                 <!-- Portfolio Modal - Image-->
                                 <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
                                 <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
-                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore
+                                    quisquam
+                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
+                                    itaque. Nam.
                                 </p>
                                 <button class="btn btn-primary" data-bs-dismiss="modal">
                                     <i class="fas fa-xmark fa-fw"></i>
@@ -393,7 +310,8 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus
+                                    Tent</h2>
                                 <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
@@ -403,9 +321,12 @@
                                 <!-- Portfolio Modal - Image-->
                                 <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />
                                 <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
-                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore
+                                    quisquam
+                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
+                                    itaque. Nam.
                                 </p>
                                 <button class="btn btn-primary" data-bs-dismiss="modal">
                                     <i class="fas fa-xmark fa-fw"></i>
@@ -430,7 +351,8 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
+                                    Controller</h2>
                                 <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
@@ -440,9 +362,12 @@
                                 <!-- Portfolio Modal - Image-->
                                 <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
                                 <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
-                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore
+                                    quisquam
+                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
+                                    itaque. Nam.
                                 </p>
                                 <button class="btn btn-primary" data-bs-dismiss="modal">
                                     <i class="fas fa-xmark fa-fw"></i>
@@ -467,7 +392,8 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked
+                                    Safe</h2>
                                 <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
@@ -477,9 +403,12 @@
                                 <!-- Portfolio Modal - Image-->
                                 <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
                                 <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
-                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore
+                                    quisquam
+                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
+                                    itaque. Nam.
                                 </p>
                                 <button class="btn btn-primary" data-bs-dismiss="modal">
                                     <i class="fas fa-xmark fa-fw"></i>
@@ -504,7 +433,8 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
+                                    Submarine</h2>
                                 <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
@@ -515,9 +445,12 @@
                                 <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png"
                                     alt="..." />
                                 <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
-                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore
+                                    quisquam
+                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
+                                    itaque. Nam.
                                 </p>
                                 <button class="btn btn-primary" data-bs-dismiss="modal">
                                     <i class="fas fa-xmark fa-fw"></i>
