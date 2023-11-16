@@ -597,12 +597,15 @@ progress {
 .blockquote-footer::before {
   content: "— ";
 }
-
+/* 모달  float 속성 추가 현윤 */
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  width: 300px;
+  height: 375px;
+  border-radius : 30px;
+  object-fit: cover;
+  float: left;
 }
-
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -610,6 +613,7 @@ progress {
   border-radius: 0.5rem;
   max-width: 100%;
   height: auto;
+  
 }
 
 .figure {
@@ -5304,13 +5308,16 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   min-height: calc(100% - var(--bs-modal-margin) * 2);
+  
 }
-
+/* 현윤  max-width 속성 추가 */
 .modal-content {
   position: relative;
   display: flex;
   flex-direction: column;
+  /* max-width: 800px; */
   width: 100%;
+  height: 100%;
   color: var(--bs-modal-color);
   pointer-events: auto;
   background-color: var(--bs-modal-bg);
@@ -5319,7 +5326,6 @@ textarea.form-control-lg {
   border-radius: var(--bs-modal-border-radius);
   outline: 0;
 }
-
 .modal-backdrop {
   --bs-backdrop-zindex: 1050;
   --bs-backdrop-bg: #000;
@@ -5338,6 +5344,48 @@ textarea.form-control-lg {
 .modal-backdrop.show {
   opacity: var(--bs-backdrop-opacity);
 }
+/* 현윤 */
+/* 모달 헤더에 배경색 추가하기 */
+.modal-header {
+  background-color: var(--bs-primary); 
+  border: none;
+  height: 70px;
+}
+/* 모달 이름 추가*/
+.modal-name{
+   text-align: left;
+   padding-bottom: 20px;
+   width: 100%;
+}
+
+.modal-info{
+  display: inline-block;
+  text-align: center;
+  width: 175px;
+}
+
+
+.modal-info span {
+  display: block;
+  /* margin-bottom: 10px; */
+  color: black;
+  font-weight: bold;
+  text-align: right;
+}
+
+.modal-info p {
+  
+  color: #1abc9c;
+  margin-bottom: 5px;
+  padding: 20px;
+  font-size: 16px;
+  display: inline-block;
+}
+.modal-btn{
+  width: 100%;
+  margin-top: 20px;
+  text-align: right;
+}
 
 .modal-header {
   display: flex;
@@ -5353,6 +5401,7 @@ textarea.form-control-lg {
   padding: calc(var(--bs-modal-header-padding-y) * 0.5) calc(var(--bs-modal-header-padding-x) * 0.5);
   margin: calc(-0.5 * var(--bs-modal-header-padding-y)) calc(-0.5 * var(--bs-modal-header-padding-x)) calc(-0.5 * var(--bs-modal-header-padding-y)) auto;
 }
+
 
 .modal-title {
   margin-bottom: 0;
@@ -5403,7 +5452,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) {
   .modal-xl {
-    --bs-modal-width: 1140px;
+    --bs-modal-width: 800px;
   }
 }
 .modal-fullscreen {
@@ -10837,6 +10886,10 @@ html {
   font-size: 2.25rem;
   line-height: 2rem;
 }
+.page-section.portfolio{
+  /* background-color: rgba(var(--bs-danger-rgb)); */
+  background-color: #fff;
+}
 @media (min-width: 992px) {
   .page-section .page-section-heading {
     font-size: 3rem;
@@ -10995,21 +11048,25 @@ html {
     font-size: 1.5rem;
   }
 }
+/* 현윤 max-width: 18rem; 수정 */
 .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
   display: block;
-  max-width: 25rem;
+  max-width: 18rem;
   border-radius: 0.5rem;
   overflow: hidden;
 }
+/* 현윤 radius  , color-수정 */
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
   top: 0;
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
+
+  background: rgba(0, 0, 0, 0.60);
+  border-radius: 30px;
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
@@ -11023,16 +11080,45 @@ html {
   font-size: 2rem;
   padding: 1rem;
 }
+/* 모달 수정 */
 .portfolio-modal .portfolio-modal-title {
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   line-height: 2rem;
 }
+/* 프로필 추가 정보 디자인
+.portfolio-modal .modal-body div {
+  text-align: left;
+}
+
+.portfolio-modal .modal-body span {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.portfolio-modal .modal-body p.mb-2 {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+
+
+/* 각 항목에 대한 스타일 */
+/* .portfolio-modal .modal-body span {
+  font-weight: bold;
+  color: #007bff; 
+  display: flex;
+}
+
+.portfolio-modal .modal-body p.mb-2 {
+  color: #495057; 
+}
+
 @media (min-width: 992px) {
   .portfolio-modal .portfolio-modal-title {
-    font-size: 3rem;
+    font-size: 1.5rem;
     line-height: 2.5rem;
   }
-}
+} */ */
 
 .footer {
   padding-top: 5rem;
@@ -11044,3 +11130,4 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
