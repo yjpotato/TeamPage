@@ -10,6 +10,9 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -3604,6 +3607,9 @@ textarea.form-control-lg {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+
+
 
 .nav {
   --bs-nav-link-padding-x: 1rem;
@@ -11044,3 +11050,46 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+
+
+
+/* 여기서부터 영희구역*/
+@keyframes moveProgressBar {
+  from {
+    right: 100%;
+    width: 0;
+  }
+}
+
+.progress-bar {
+  width: 0;
+}
+
+.animate {
+  animation: moveProgressBar 3s linear forwards;
+  background: linear-gradient(to right, red, orange, yellow);
+}
+
+.progress-75 .progress-bar {
+  width: 75%;
+}
+
+.progress-18 .progress-bar {
+  width: 18%;
+}
+
+.progress-87 .progress-bar {
+  width: 87%;
+}
+
+.progress-65 .progress-bar {
+  width: 65%;
+}
+
+.progress-89 .progress-bar {
+  width: 89%;
+}
+
+
+/* 여기까지 영희구역*/
