@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .card-body {
+    width: 80%; /* 가로 길이를 80%로 줄임 */
+    margin: auto; /* 중앙 정렬을 위해 추가 */
+  }
+  
+  /* 나머지 스타일 유지 */
+  .container, .row, .card {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .col-md-6 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn-primary {
+    background-color: #4d377b; 
+    border-color: #4d377b; 
+  }
+  
