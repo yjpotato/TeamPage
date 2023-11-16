@@ -8,6 +8,19 @@
 // 
 
 window.addEventListener('DOMContentLoaded', event => {
+    const content = "우리는 우주 최강 1조!!";
+    const text = document.querySelector(".text");
+    let i = 0;
+
+    function typing(){
+        let txt = content[i++];
+        text.innerHTML += txt=== "\n" ? "<br/>": txt;
+        if (i > content.length) {
+            text.textContent = "";
+            i = 0;
+        }
+    }
+    setInterval(typing, 300)
 
     // Navbar shrink function
     var navbarShrink = function () {
