@@ -11255,6 +11255,7 @@ html {
   margin-top: 10px;
   
 }
+
 .inputb{
   border-radius: 10px;
   height: 40px;
@@ -11264,8 +11265,16 @@ html {
 .join_btn{
   margin-top: -29px;
 }
+
+.loginb{
+  margin-right: 10px;
+  border-radius: 10px;
+  height: 40px;
+  width: 100px;
+}
+
 .joinb{
-  border-radius: 5px;
+  border-radius: 10px;
   height: 40px;
   width: 100px;
 }
