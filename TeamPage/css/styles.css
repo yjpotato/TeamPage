@@ -11380,3 +11380,35 @@ html {
     margin: 0 auto;
   }
 }
+
+.responsive-image_0hee {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.intro_text >h1{
+  text-align: center;
+  color:black;
+}
+
+.intro_text >h4{
+  text-align: center;
+  color:gray;
+}
+
+.num1{
+  width:1200px;
+  background-color: green;
+  display: flex;
+  margin: auto;
+}
+
+.num1 > li{
+  flex:1;
+  background-color: blue;
+}
+
+.num1 > li > div{
+  text-align: center;
+}
