@@ -16,40 +16,10 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
         type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-
-
+    <link href="/css/styles.css" rel="stylesheet" />
 
     <!--여기서 부터 영희 구역-->
-    <script>
-        function startAnimation(entries, observer) {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('animate');
-              observer.unobserve(entry.target);
-            }
-          });
-        }
-    
-        const options = {
-          root: null,
-          rootMargin: '0px',
-          threshold: 0.5
-        };
-    
-        const observer = new IntersectionObserver(startAnimation, options);
-    
-        document.addEventListener('DOMContentLoaded', () => {
-          const progressBars = document.querySelectorAll('.progress-bar');
-    
-          progressBars.forEach(bar => {
-            observer.observe(bar);
-            bar.parentElement.classList.add('visible');
-          });
-        });
-      </script>
 
-<!--여기까지 영희 구역-->
 
 
 
@@ -57,7 +27,7 @@
 
 <body id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <!-- <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="#page-top">최강1조</a>
             <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
@@ -67,210 +37,243 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded active"
+                            href="./index.html#main">Main</a></li>
+
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#page-top">Main</a></li>
+                            href="./index.html#portfolio">Portfolio</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#portfolio">Portfolio</a></li>
+                            href="./index.html#mbti">Mbti</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#about">Skill</a></li>
+                            href="./index.html#skill">Skill</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#contact">Mbti</a></li>
+                            href="./Board.html">Board</a></li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link login-button py-3 px-0 px-lg-3 rounded" href="./Login.html">Login</a>
+                    </li>
+
+
                 </ul>
             </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead bg-primary-copy text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <div class="text_box"><span class="text"></span><span class="blink">|</span></div>
-                
-                <div class="image-container">
-                    <img src="../TeamPage/assets/img/2.jpg", class="responsive-image", width="1200px">
-                </div>
+        </div>
+    </nav> -->
+    <div id="header"></div>
+    <!-- Masthead-->
+    <header class="masthead bg-primary-copy text-white text-center">
+        <div class="container d-flex align-items-center flex-column" id="main">
+            <div class="text_box"><span class="text"></span><span class="blink">|</span></div>
+
+            <div class="image-container">
+                <img src="../assets/img/2.jpg" , class="responsive-image" , width="1200px">
             </div>
-        </header>
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Our Team</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/panda.jpg" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/panda.jpg" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/panda.jpg" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/panda.jpg" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/panda.jpg" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/panda.jpg" alt="..." />
-                        </div>
-                    </div>
-                </div>
+        </div>
+    </header>
+    <!-- Portfolio Section-->
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Our Team</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
             </div>
-        </section>
-
-
-
-        <!-- About Section-->
-        <section class="page-section bg-primary-copy text-white mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
+            <!-- Portfolio Grid Items-->
+            <div class="row justify-content-center">
+                <!-- Portfolio Item 1-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/panda.jpg" alt="..." />
+                    </div>
                 </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
+                <!-- Portfolio Item 2-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/panda.jpg" alt="..." />
+                    </div>
                 </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-                        <i class="fas fa-download me-2"></i>
-                        Free Download!
-                    </a>
+                <!-- Portfolio Item 3-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/panda.jpg" alt="..." />
+                    </div>
                 </div>
-            </div>
-        </section>
-
-
-        <!-- Contact Section-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
+                <!-- Portfolio Item 4-->
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/panda.jpg" alt="..." />
+                    </div>
                 </div>
-                <!-- Contact Section Form-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
-                        </form>
+                <!-- Portfolio Item 5-->
+                <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/panda.jpg" alt="..." />
+                    </div>
+                </div>
+                <!-- Portfolio Item 6-->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/panda.jpg" alt="..." />
                     </div>
                 </div>
             </div>
-        </section>
-        
-       
+        </div>
+    </section>
 
-  
-         
 
+
+    <!-- About Section-->
+    <section class="page-section bg-primary-copy text-white mb-0" id="mbti">
+        <div class="container">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="row">
+                <div class="col-lg-4 ms-auto">
+                    <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download
+                        includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS
+                        stylesheets for easy customization.</p>
+                </div>
+                <div class="col-lg-4 me-auto">
+                    <p class="lead">You can create your own custom avatar for the masthead, change the icon in the
+                        dividers, and add your email address to the contact form to make it fully functional!</p>
+                </div>
+            </div>
+            <!-- About Section Button-->
+            <div class="text-center mt-4">
+                <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
+                    <i class="fas fa-download me-2"></i>
+                    Free Download!
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <!-- Contact Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Contact Section Form-->
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- * * SB Forms Contact Form * *-->
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- This form is pre-integrated with SB Forms.-->
+                    <!-- To make this form functional, sign up at-->
+                    <!-- https://startbootstrap.com/solution/contact-forms-->
+                    <!-- to get an API token!-->
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <!-- Name input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" type="text" placeholder="Enter your name..."
+                                data-sb-validations="required" />
+                            <label for="name">Full name</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        </div>
+                        <!-- Email address input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="email" type="email" placeholder="name@example.com"
+                                data-sb-validations="required,email" />
+                            <label for="email">Email address</label>
+                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                        </div>
+                        <!-- Phone number input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
+                                data-sb-validations="required" />
+                            <label for="phone">Phone number</label>
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.
+                            </div>
+                        </div>
+                        <!-- Message input-->
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" type="text"
+                                placeholder="Enter your message here..." style="height: 10rem"
+                                data-sb-validations="required"></textarea>
+                            <label for="message">Message</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
+                            </div>
+                        </div>
+                        <!-- Submit success message-->
+                        <!---->
+                        <!-- This is what your users will see when the form-->
+                        <!-- has successfully submitted-->
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder">Form submission successful!</div>
+                                To activate this form, sign up at
+                                <br />
+                                <a
+                                    href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                            </div>
+                        </div>
+                        <!-- Submit error message-->
+                        <!---->
+                        <!-- This is what your users will see when there is-->
+                        <!-- an error submitting the form-->
+                        <div class="d-none" id="submitErrorMessage">
+                            <div class="text-center text-danger mb-3">Error sending message!</div>
+                        </div>
+                        <!-- Submit Button-->
+                        <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
     <!--여기서부터 영희 구역-->
 
-    <section class="container">
+    <section class="container" id="skill">
         <div class="intro_bg"></div>
         <br>
         <br>
@@ -283,238 +286,233 @@
             <div class="progress progress-75">
                 <div class="progress-bar bg-success"></div>
             </div>
-         
+
             <p class="mt-4 mb-2">주량</p>
             <div class="progress progress-18">
                 <div class="progress-bar bg-success"></div>
             </div>
-         
+
             <p class="mt-4 mb-2">친화력</p>
             <div class="progress progress-87">
                 <div class="progress-bar bg-success"></div>
             </div>
-         
+
             <p class="mt-4 mb-2">단합력</p>
             <div class="progress progress-65">
                 <div class="progress-bar bg-success"></div>
             </div>
-         
+
             <p class="mt-4 mb-2">비주얼</p>
             <div class="progress progress-89">
                 <div class="progress-bar bg-success"></div>
-            </div>      
+            </div>
             <br>
             <br>
             <br>
         </div>
-        
+
     </section>
 
 
     <!--여기까지 영희 구역-->
 
 
-
-
-
-  
-
-   
-
-
-
-
     <!-- Footer-->
-    <footer class="footer text-center">
+
+    <!-- <footer class="footer text-center">
         <div class="container">
             <div class="row">
-                <!-- Footer Location-->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">최강1조</h4>
-                    <p class="lead mb-0">
+                 Footer Location-->
+    <!-- <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4 font-group1">최강1조</h4>
+                    <p class="lead mb-0 font-group1">
                         2023 11월20일 첫프론트과제
                         <br />
-                        Metanet
+                        Metanet Internship
                     </p>
                 </div>
-                <!-- Footer Social Icons-->
                 <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Around the Web</h4>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-github"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-e-mail"></i></a>
-
+                    <h4 class="text-uppercase mb-4 font-group2">Around the Web</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/yjpotato/TeamPage"><i
+                            class="fab fa-fw fa-github"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="mailto:ponyojoa7467@gmail.com"><i
+                            class="fas fa-envelope"></i></a>
                 </div>
-                <!-- Footer About Text-->
                 <div class="col-lg-4">
-                    <h4 class="text-uppercase mb-4">About StrongestOneTeam</h4>
-                    <p class="lead mb-0">
+                    <h4 class="text-uppercase mb-4 font-group2">About StrongestOneTeam</h4>
+                    <p class="lead mb-0 font-group3">
                         세계관 최강자들만 모인 팀입니다. 1등으로 과제를 제출하는 그날을 기원하며,,
                         <a href="https://github.com/yjpotato/TeamPage">Team Github</a>
+                        .
                     </p>
                 </div>
+
             </div>
         </div>
-    </footer>
+    </footer>  -->
+
     <!-- Copyright Section-->
-    <div class="copyright py-4 text-center text-white">
+    <!-- <div class="copyright py-4 text-center text-white">
         <div class="container"><small>Copyright &copy; StrongestOneTeam 2023</small></div>
+    </div> -->
+    <div id="footer"></div>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio Modal 1 유진-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <div class="modal-name">
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">정 유진</h2>
+                                </div>
+                                <!-- Icon Divider-->
+                                <!-- <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div> -->
+                                <!-- Portfolio Modal - Image-->
+                                <div class="modal-img">
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/son7.jpg" alt="..." />
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <div class="modal-info">
+                                    <span>나이 : <p class="mb-2">26살</p></span>
+                                    <span>지역 : <p class="mb-2">서울</p></span>
+                                    <span>성격 : <p class="mb-2">욱함</p></span>
+                                    <span>취미 : <p class="mb-2">베팅</p></span>
+                                </div>
+                                <div class="modal-btn">
+                                    <a class="btn btn-primary" href="/html/intro1.html">
+                                        자세히보기
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <!-- Portfolio Modal 2 팀-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Our Team</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <div class="modal-img">
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/duck.jpg" alt="..." />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-
-
-
-    <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1 유진-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                     <!-- Portfolio Modal - Title-->
-                                     <div class="modal-name">
-                                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">정 유진</h2>
-                                    </div>
-                                    <!-- Icon Divider-->
-                                    <!-- <div class="divider-custom">
+    <!-- Portfolio Modal 3 석준-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <div class="modal-name">
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">강 석준</h2>
+                                </div>
+                                <!-- Icon Divider-->
+                                <!-- <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div> -->
-                                    <!-- Portfolio Modal - Image-->
-                                    <div class="modal-img">
-                                        <img class="img-fluid rounded mb-5" src="assets/img/portfolio/son7.jpg" alt="..." />
-                                    </div>
-                                    <!-- Portfolio Modal - Text-->
-                                    <div class="modal-info">
-                                        <span>나이 : <p class="mb-2">26살</p></span>
-                                        <span>지역 : <p class="mb-2">서울</p></span>
-                                        <span>성격 : <p class="mb-2">욱함</p></span>
-                                        <span>취미 : <p class="mb-2">베팅</p></span>
-                                    </div>
-                                    <div class="modal-btn">
-                                        <a class="btn btn-primary" href="/html/intro1.html">
-                                            자세히보기
-                                        </a>
-                                    </div>
-                                 </div>
+                                <!-- Portfolio Modal - Image-->
+                                <div class="modal-img">
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/son7.jpg" alt="..." />
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <div class="modal-info">
+                                    <span>나이 : <p class="mb-2">26살</p></span>
+                                    <span>지역 : <p class="mb-2">서울</p></span>
+                                    <span>성격 : <p class="mb-2">욱함</p></span>
+                                    <span>취미 : <p class="mb-2">베팅</p></span>
+                                </div>
+                                <div class="modal-btn">
+                                    <a class="btn btn-primary" href="/html/intro2.html">
+                                        자세히보기
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    
-        <!-- Portfolio Modal 2 팀-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Our Team</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <div class="modal-img">
-                                        <img class="img-fluid rounded mb-5" src="assets/img/portfolio/duck.jpg" alt="..." />
-                                    </div>
-                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Portfolio Modal 3 석준-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <div class="modal-name">
-                                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">강 석준</h2>
-                                    </div>
-                                    <!-- Icon Divider-->
-                                    <!-- <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div> -->
-                                    <!-- Portfolio Modal - Image-->
-                                    <div class="modal-img">
-                                        <img class="img-fluid rounded mb-5" src="assets/img/portfolio/son7.jpg" alt="..." />
-                                    </div>
-                                    <!-- Portfolio Modal - Text-->
-                                    <div class="modal-info">
-                                        <span>나이 : <p class="mb-2">26살</p></span>
-                                        <span>지역 : <p class="mb-2">서울</p></span>
-                                        <span>성격 : <p class="mb-2">욱함</p></span>
-                                        <span>취미 : <p class="mb-2">베팅</p></span>
-                                    </div>
-                                    <div class="modal-btn">
-                                        <a class="btn btn-primary" href="/html/intro2.html">
-                                            자세히보기
-                                        </a>
-                                    </div>
-                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-          <!-- Portfolio Modal 4 현윤-->
-          <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                   <!-- Portfolio Modal - Title-->
-                                   <div class="modal-name">
+    </div>
+    <!-- Portfolio Modal 4 현윤-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <div class="modal-name">
                                     <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">나 현윤</h2>
-                                    </div>
-                                    <!-- Icon Divider-->
-                                    <!-- <div class="divider-custom">
+                                </div>
+                                <!-- Icon Divider-->
+                                <!-- <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div> -->
-                                    <!-- Portfolio Modal - Image-->
-                                    <div class="modal-img">
-                                        <img class="img-fluid rounded mb-5" src="assets/img/portfolio/son7.jpg" alt="..." />
-                                    </div>
-                                    <!-- Portfolio Modal - Text-->
-                                    <div class="modal-info">
-                                        <span>나이 : <p class="mb-2">26살</p></span>
-                                        <span>지역 : <p class="mb-2">서울</p></span>
-                                        <span>성격 : <p class="mb-2">욱함</p></span>
-                                        <span>취미 : <p class="mb-2">베팅</p></span>
-                                    </div>
-                                    <div class="modal-btn">
-                                        <a class="btn btn-primary" href="/html/intro3.html">
-                                            자세히보기
-                                        </a>
-                                    </div>
+                                <!-- Portfolio Modal - Image-->
+                                <div class="modal-img">
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/son7.jpg" alt="..." />
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <div class="modal-info">
+                                    <span>나이 : <p class="mb-2">26살</p></span>
+                                    <span>지역 : <p class="mb-2">서울</p></span>
+                                    <span>성격 : <p class="mb-2">욱함</p></span>
+                                    <span>취미 : <p class="mb-2">베팅</p></span>
+                                </div>
+                                <div class="modal-btn">
+                                    <a class="btn btn-primary" href="/html/intro3.html">
+                                        자세히보기
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -522,42 +520,44 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Portfolio Modal 5 영희-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <div class="modal-name">
-                                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">김 영희</h2>
-                                    </div>
-                                    <!-- Icon Divider-->
-                                    <!-- <div class="divider-custom">
+    <!-- Portfolio Modal 5 영희-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <div class="modal-name">
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">김 영희</h2>
+                                </div>
+                                <!-- Icon Divider-->
+                                <!-- <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div> -->
-                                    <!-- Portfolio Modal - Image-->
-                                    <div class="modal-img">
-                                        <img class="img-fluid rounded mb-5" src="assets/img/portfolio/son7.jpg" alt="..." />
-                                    </div>
-                                    <!-- Portfolio Modal - Text-->
-                                    <div class="modal-info">
-                                        <span>나이 : <p class="mb-2">26살</p></span>
-                                        <span>지역 : <p class="mb-2">서울</p></span>
-                                        <span>성격 : <p class="mb-2">욱함</p></span>
-                                        <span>취미 : <p class="mb-2">베팅</p></span>
-                                    </div>
-                                    <div class="modal-btn">
-                                        <a class="btn btn-primary" href="/html/intro4.html">
-                                            자세히보기
-                                        </a>
-                                    </div>
+                                <!-- Portfolio Modal - Image-->
+                                <div class="modal-img">
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/son7.jpg" alt="..." />
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <div class="modal-info">
+                                    <span>나이 : <p class="mb-2">26살</p></span>
+                                    <span>지역 : <p class="mb-2">서울</p></span>
+                                    <span>성격 : <p class="mb-2">욱함</p></span>
+                                    <span>취미 : <p class="mb-2">베팅</p></span>
+                                </div>
+                                <div class="modal-btn">
+                                    <a class="btn btn-primary" href="/html/intro4.html">
+                                        자세히보기
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -565,42 +565,44 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Portfolio Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                  <!-- Portfolio Modal - Title-->
-                                  <div class="modal-name">
+    <!-- Portfolio Modal 6-->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <div class="modal-name">
                                     <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">최 가인</h2>
-                                    </div>
-                                    <!-- Icon Divider-->
-                                    <!-- <div class="divider-custom">
+                                </div>
+                                <!-- Icon Divider-->
+                                <!-- <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div> -->
-                                    <!-- Portfolio Modal - Image-->
-                                    <div class="modal-img">
-                                        <img class="img-fluid rounded mb-5" src="assets/img/portfolio/son7.jpg" alt="..." />
-                                    </div>
-                                    <!-- Portfolio Modal - Text-->
-                                    <div class="modal-info">
-                                        <span>나이 : <p class="mb-2">26살</p></span>
-                                        <span>지역 : <p class="mb-2">서울</p></span>
-                                        <span>성격 : <p class="mb-2">욱함</p></span>
-                                        <span>취미 : <p class="mb-2">베팅</p></span>
-                                    </div>
-                                    <div class="modal-btn">
-                                        <a class="btn btn-primary" href="/html/intro5.html">
-                                            자세히보기
-                                        </a>
-                                    </div>
+                                <!-- Portfolio Modal - Image-->
+                                <div class="modal-img">
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/son7.jpg" alt="..." />
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <div class="modal-info">
+                                    <span>나이 : <p class="mb-2">26살</p></span>
+                                    <span>지역 : <p class="mb-2">서울</p></span>
+                                    <span>성격 : <p class="mb-2">욱함</p></span>
+                                    <span>취미 : <p class="mb-2">베팅</p></span>
+                                </div>
+                                <div class="modal-btn">
+                                    <a class="btn btn-primary" href="/html/intro5.html">
+                                        자세히보기
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -608,6 +610,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
