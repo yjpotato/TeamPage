@@ -11381,34 +11381,55 @@ html {
   }
 }
 
+
+/* 영희구역 */
 .responsive-image_0hee {
   width: 100%;
   height: auto;
   max-width: 100%;
 }
 
-.intro_text >h1{
+.intro_text h1 {
+  font-size: 50px;
   text-align: center;
-  color:black;
+  color: black;
 }
 
-.intro_text >h4{
+.intro_text h5 {
+  font-size: 20px;
   text-align: center;
-  color:gray;
+  color: gray;
 }
 
-.num1{
-  width:1200px;
-  background-color: green;
-  display: flex;
-  margin: auto;
+.container02 {
+  max-width: 1200px;
+  width: 95%;
+  margin: auto; 
+  overflow-x: auto; 
+  white-space: nowrap; 
 }
 
-.num1 > li{
-  flex:1;
-  background-color: blue;
+.slider-wrapper02 .font-size02 {
+  font-size: 30px;
 }
 
-.num1 > li > div{
-  text-align: center;
+.slider-wrapper02 .image-list02 {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); /* 수정: repeat 값 변경 */
+  font-size: 0;
+  margin-bottom: 30px;
+  gap: 18px;
+  white-space: nowrap; /* 수정: 여러 이미지를 한 줄에 나열하도록 변경 */
+}
+
+.slider-wrapper02 .image-list02 .image-item {
+  width: 400px;
+  height: 350px;
+  object-fit: cover;
+  display: inline-block; /* 수정: 이미지를 인라인 블록 요소로 설정하여 가로로 나열하도록 변경 */
+}
+
+.hobby {
+  font-size: 30px;
+  padding-left: 159px;
 }
