@@ -5376,7 +5376,7 @@ textarea.form-control-lg {
 /* 현윤 */
 /* 모달 헤더에 배경색 추가하기 */
 .modal-header {
-  background-color: var(--bs-primary); 
+  /* background-color: #4d377b;  */
   border: none;
   height: 70px;
 }
@@ -5390,7 +5390,7 @@ textarea.form-control-lg {
 .modal-info{
   display: inline-block;
   text-align: center;
-  width: 175px;
+  width: 180px;
 }
 
 
@@ -5401,13 +5401,17 @@ textarea.form-control-lg {
   font-weight: bold;
   text-align: right;
 }
-
+.modal-body span{
+  color: black;
+  font-weight: bolder,;
+  font-size: 115%;
+}
 .modal-info p {
   
-  color: #1abc9c;
+  color: rgba(0, 0, 0, 255);
   margin-bottom: 5px;
   padding: 20px;
-  font-size: 16px;
+  font-size: 30px;
   display: inline-block;
 }
 .modal-btn{
@@ -5415,7 +5419,7 @@ textarea.form-control-lg {
   margin-top: 20px;
   text-align: right;
 }
-
+.modal-btn 
 .modal-header {
   display: flex;
   flex-shrink: 0;
@@ -11118,6 +11122,7 @@ html {
 
 .portfolio-modal .btn-close {
   color: #1abc9c;
+  display: block;
   font-size: 2rem;
   padding: 1rem;
 }
@@ -11126,14 +11131,12 @@ html {
   font-size: 1.75rem;
   line-height: 2rem;
 }
-/* 프로필 추가 정보 디자인
-*/.portfolio-modal .modal-body div {
-  text-align: left;
-}
-
+/* 프로필 추가 정보 디자인*/
 .portfolio-modal .modal-body span {
   display: block;
+  margin-left: 30px;
   margin-bottom: 15px;
+  text-align: left;
 }
 
 .portfolio-modal .modal-body p.mb-2 {
