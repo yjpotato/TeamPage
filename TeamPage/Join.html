@@ -1,0 +1,106 @@
+<!--여기서 부터 영희 구역-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+  <!-- 부트스트랩 CSS 링크 추가 -->
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="css/Join.css" rel="stylesheet"> -->
+
+
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <!-- <link href="css/Join.css" type="text/css" rel="stylesheet" /> -->
+  <link href="./css/styles.css" type="text/css" rel="stylesheet" />
+</head>
+
+
+
+<body>
+  <div id="header"></div>
+  <div>
+
+    <div class="container mt-5">
+
+      <div class="row justify-content-center">
+
+        <div class="container mt-5">
+
+          <div class="card-body">
+
+            <!-- 회원가입 폼 -->
+            <h5>회원가입</h5>
+            <br>
+            <!-- <form> -->
+            <div class="form-group">
+              <label for="username">사용자명</label>
+              <input type="text" class="form-control" id="username" placeholder="사용자명을 입력하세요">
+              <br>
+            </div>
+
+            <div class="form-group">
+              <label for="email">이메일 주소</label>
+              <div class="input-group">
+                <input type="email" class="form-control" id="email" placeholder="이메일을 입력하세요">
+              </div>
+
+              <div class="input_btn">
+                <button type="button" class="inputb" onclick="checkEmailAvailability()">중복
+                  확인</button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <br>
+              <label for="password">비밀번호</label>
+              <input type="password" class="form-control" id="password" placeholder="비밀번호를 입력하세요">
+              <br>
+            </div>
+
+            <div class="form-group">
+              <label for="confirmPassword">비밀번호 확인</label>
+              <input type="password" class="form-control" id="confirmPassword" placeholder="비밀번호를 다시 입력하세요">
+              <br>
+            </div>
+            <div class="join_btn">
+              <button type="submit" class="joinb">회원가입</button>
+            </div>
+            <!-- </form> -->
+
+
+
+          </div>
+
+        </div>
+
+        <!-- </div> -->
+
+
+      </div>
+
+
+      <!-- 부트스트랩 스크립트 링크 추가 -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <script src="./js/scripts.js"></script>
+
+    </div>
+    <div id="footer"></div>
+
+</body>
+
+
+</html>
+
+<!--여기까지 영희 구역-->
