@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // 헤더 불러오기
-    fetch('../../../includes/header.html')
+    fetch('/includes/header.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('header').innerHTML = data;
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
     // 푸터 불러오기
-    fetch('../../../includes/footer.html')
+    fetch('/includes/footer.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('footers').innerHTML = data;
