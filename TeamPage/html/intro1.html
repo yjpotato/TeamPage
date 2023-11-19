@@ -1,28 +1,201 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>YouJeans</title>
+    <title>유진스의 하입보이</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+
+    <!-- Additional Font-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
+    </style>
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+
+    <link href="./yoojin/main.css" type="text/css" rel="stylesheet" />
+
+    <link href="/css/styles.css" type="text/css" rel="stylesheet" />
+
+    <!-- Additional Style for Applying the Sunflower Font -->
+    <style>
+        body {
+            font-family: 'Sunflower', sans-serif;
+        }
+
+        /* Add more styles as needed for other elements using the Sunflower font */
+    </style>
 </head>
+
+<html>
+<div id="header"></div>
+
 <body>
-    <div id="header"></div>
 
-        <h1> 유진 페이지입니다.</h1>
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul>
+                <li><a href="intro1.html#intro" class="active">Introduction</a></li>
+                <li><a href="intro1.html#interests">Interests</a></li>
+                <li><a href="intro1.html#album">Album</a></li>
+                <li><a href="intro1.html#skill">Skill</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Introduction -->
+            <section id="intro" class="main">
+                <div class="spotlight">
+                    <div class="content">
+                        <header class="major">
+                            <h2>Jeong Yoojin</h2>
+                        </header>
+                        <h2>'프로그램'은 내가 원하는대로 움직이지 않는다.<br>타이핑대로 움직인다.</h2>
+
+
+                    </div>
+                    <!-- <span class="image"><img src="images/pic01.jpg" alt="" /></span> -->
+                </div>
+            </section>
+
+            <!-- First Section -->
+            <section id="interests" class="main special">
+                <header class="major">
+                    <h2>Interests these days</h2>
+                    <h3>요즘 나의 관심사</h3>
+                </header>
+                <ul class="features">
+                    <li>
+                        <span class="icon solid major style1 fa-code"></span>
+                        <h3>Watch animation</h3>
+                        <p>내 인생만화 나루토</p>
+                        <img src="./yoojin/images/나루토.gif" class="gif-image">
+
+                    </li>
+                    <li>
+                        <span class="icon major style3 fa-copy"></span>
+                        <h3>Coding</h3>
+                        <p>개발,,잘하고싶다</p>
+                        <img src="./yoojin/images/코딩짤.gif" class="gif-image">
+                    </li>
+                    <li>
+                        <span class="icon major style5 fa-gem"></span>
+                        <h3>drinking alcohol</h3>
+                        <p>저는 요정이라 이슬만 먹고 살아요</p>
+                        <img src="./yoojin/images/짠.gif" class="gif-image">
+                    </li>
+                </ul>
+
+            </section>
+
+            <!-- Get Started -->
+            <section id="album" class="main special">
+                <header class="major">
+                    <h2>My album</h2>
+                    <p>내 사진과 내가 좋아하는것들!<br />
+                        구경하고 가세용 0_< </p>
+                </header>
+                <div class="card-container">
+
+
+                </div>
+            </section>
+
+
+            <!-- Second Section -->
+            <section id="skill" class="main special">
+                <header class="major">
+                    <h2>My Skill</h2>
+                    <p>사용가능한 개발 기술/프레임워크</p>
+                </header>
+                <ul class="statistics">
+                    <li class="style1">
+                        <span class="icon solid fa-code-branch"></span>
+                        <strong>Html/css</strong> 60%
+                    </li>
+                    <li class="style2">
+                        <span class="icon fa-folder-open"></span>
+                        <strong>Java</strong> 50%
+                    </li>
+                    <li class="style3">
+                        <span class="icon solid fa-signal"></span>
+                        <strong>Javascript</strong> 50%
+                    </li>
+                    <li class="style4">
+                        <span class="icon solid fa-laptop"></span>
+                        <strong>MySql</strong> 40%
+                    </li>
+                    <li class="style5">
+                        <span class="icon fa-gem"></span>
+                        <strong>React</strong> 60%
+                    </li>
+                </ul>
+                <h3 class="content2">
+                    <span class="centered-text">100%가 되는 그날까지..!</span>
+                </h3>
+
+
+            </section>
+
+
+        </div>
+
+        <br>
+        <br>
+
+        <section>
+            <h2>My Contact</h2>
+            <ul class="icons">
+                <!-- GitHub 아이콘 -->
+                <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/yjpotato/TeamPage"><i
+                        class="fab fa-fw fa-github"></i></a>
+                <!-- 이메일 아이콘 -->
+                <a class="btn btn-outline-light btn-social mx-1" href="mailto:ponyojoa7467@gmail.com"><i
+                        class="fas fa-envelope"></i></a>
+            </ul>
+
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <dl class="alt">
+                <p>Address</p>
+                <p>Seoul &bull; Songpa-gu &bull; Ogeum-dong,</p>
+                <p>Phone</p>
+                <p>(010) 7292 - 7467</p>
+                <p>Email</p>
+                <p><a href="#">ponyojoa7467@gmail.com</a></p>
+            </dl>
+
+        </section>
+        <br>
+        <br>
+        <br>
+    </div>
     <div id="footer"></div>
-
     <script src="/js/scripts.js"></script>
+    <script src="./yoojin/yoojinscript.js"></script>
 </body>
+
+
+
+
 </html>
