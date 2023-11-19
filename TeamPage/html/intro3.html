@@ -16,14 +16,152 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
-</head>
-<body>
-    <div id="header"></div>
-
+    <link rel="stylesheet" href="../css/yoon/reset.css">
+    <link rel="stylesheet" href="../css/yoon/yoon.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- GSAP 라이브러리 연결 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- scroll 라이브러리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
-        <h1> 현윤 페이지입니다.</h1>
-        <div id="footer"></div>
+  
+  <!-- <script src="./lib/jquery/jquery-3.6.1.min.js"></script> -->
+  <script defer src="../js/yoon/main.js"></script>
+</head>
+<body id="hy-body">
+    <div id="header"></div>
+    
+    
+       
+<!-- main -->
+<main class="hy-container">
+    <!-- ABOUT -->
+    <section id="ABOUT">
+      <div class="text-area">
+        <ul>
+          <li title="인사">안녕하세요!</li>
+          <li title="">BackEnd 개발자를</li>
+          <li title="">꿈꾸고있는</li>
+          <li title="">1조</li>
+          <li title="이름"> 나현윤입니다.</li>
+        </ul>
+        <h2> 지속적인 도전을 즐기는</br><span>개발자</span></h2>
+      </div>
+      <div class="img-area">
+        <img src="../assets/img/yoon/1111.jpg" alt="비쥬얼이미지">
+      </div>
+    </section>
+  
+  
+    <!-- PROJECT -->
+    <section id="PROJECT">
+      <!-- ----------Portfolio -->
+      <div>
+          <h3>My Favorite</h3>
+          <div class="content-box">
+              <!-- Slider main container -->
+              <div class="swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                      <img src="../assets/img/yoon/fa_1.jpg" alt="">
+                      <p>토트넘 경기 보기</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../assets/img/yoon/lol.jpg" alt="">
+                    <p>게임</p>
+                 </div>
+                  <div class="swiper-slide">
+                      <img src="../assets/img/yoon/tkscor.jpg" alt="">
+                      <p>산책</p>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="../assets/img/yoon/japan.jpg" alt="">
+                      <p>온천</p>
+                  </div>
+                  ...
+                  </div>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+              
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+              
+                  <!-- If we need scrollbar -->
+                  <div class="swiper-scrollbar"></div>
+              </div>
+          </div>
+      </div>
+  
+  
+  
+      <!-- ----------Project -->
+      <div class="team">
+        <h3>Desired Travel</h3>
+        <div class="content-box flex-box">
+          <!-- TAB MENU -->
+          <div id="tab">
+              <div class="tab-menu">
+              <ul>
+                  <li><a href="#;">1</a></li>
+                  <li><a href="#;">2</a></li>
+                  <li><a href="#;">3</a></li>
+                  <li><a href="#;">4</a></li>
+              </ul>
+              </div>
+              <div class="tab-contents">
+                <div class="on">
+                    <img src="../assets/img/yoon/rundon.jpg" alt="">
+                </div>
+                <div>
+                    <img src="../assets/img/yoon/ground.jpg" alt="">
+                </div>
+                <div>
+                    <img src="../assets/img/yoon/restaurant.jpg" alt="">
+                </div>
+                <div>
+                    <img src="../assets/img/yoon/buger.jpg" alt="">
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="team">
+          <h3>MY INFO</h3>
+      </div>
+    </section>
+  
+    
+  </main>
+  <section>
+      <div class="hy-back hy-text">
+          <p>
+              <span>'배움에는 끝이 없다.'</span></br>모든일에 최선을 다하는 사람이 되겠습니다.</br> 
+          </p>
+      </div>
+  </section>
+  <!-- CONTACT -->
+  <footer id="hy-footer">
+    <div id="CONTACT" class="top-area">
+      <ul>
+          <li>NAME : 나현윤</li>
+          <li>TEL : 010-3776-7507</li>
+          <li>Email : nahy0517@google.com</li>
+          <li><a href="" target="_blank">velog</a></li>
+          <li><a href="" target="_blank">github</a></li>
+      </ul>
+    </div>
+  </footer>
 
-        <script src="/js/scripts.js"></script>
+
+
+    <div id="footer"></div>
+
+        
 </body>
+<script src="/js/scripts.js"></script>
 </html>
