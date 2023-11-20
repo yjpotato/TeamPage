@@ -3709,3 +3709,31 @@ section a:hover {
     vertical-align: middle;
     line-height: normal; /* 수직 중앙 정렬을 위해 라인 높이를 정상 값으로 설정 */
 }
+#loading-overlay {
+    position: fixed;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 930px; /* 사진의 크기에 맞게 조절 */
+    height: 700px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    opacity: 1;
+    transition: background 1s ease-in-out; /* 배경만 투명도 전환 효과를 적용 */
+}
+
+#loading-overlay.hidden {
+    /* background: rgba(255, 255, 255, 0); */
+	background: #fff;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#loading-overlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지가 꽉 차도록 설정 */
+}
